@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Demostración 2</title>
+</head>
+<body>
+
+    <h1>Demostración de Output en Javascript</h1>
+
+    <button onclick="Nombre()">
+        Mostrar mi nombre
+    </button>
+
+    <br><br>
+
+    <p id="parrafo"></p>
+
+
+    <button onclick="cambiarTexto()">
+        Cambiar texto
+    </button>
+
+    <script>
+        
+        console.log("La página se cargó correctamente");
+
+        function Nombre() {
+            alert("Eliel Gutiérrez");
+        }
+
+        function cambiarTexto() {
+            document.getElementById("parrafo").innerHTML = 
+            "¡Texto actualizado con Javascript!";
+        }
+    </script>
+
+</body>
+</html>
